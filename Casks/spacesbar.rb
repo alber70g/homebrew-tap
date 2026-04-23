@@ -1,6 +1,6 @@
 cask "spacesbar" do
-  version "0.1.1"
-  sha256 "d82d435671fb5865c30226a27c9256307cf44d04afe6a75373c59a053d08124a"
+  version "0.1.3"
+  sha256 "7e27b10e5271c67a3a24f63447622916b61bb8f3d945eb1a77cd99beb2a5a4a0"
 
   url "https://github.com/alber70g/SpacesBar/releases/download/v#{version}/SpacesBar-#{version}-arm64.zip"
   name "SpacesBar"
@@ -19,12 +19,11 @@ cask "spacesbar" do
     "~/Library/Preferences/nl.upgraide.SpacesBar.plist",
   ]
 
-  caveats <<~EOS
+  caveats <<~CAVEATS
     SpacesBar is unsigned, so macOS Gatekeeper will block it on first launch.
 
-    Either right-click SpacesBar.app in /Applications and choose "Open",
-    or remove the quarantine attribute manually:
+    Remove the quarantine attribute manually before first launch:
 
       xattr -dr com.apple.quarantine /Applications/SpacesBar.app
-  EOS
+  CAVEATS
 end
