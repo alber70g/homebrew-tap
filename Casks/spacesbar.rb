@@ -1,6 +1,6 @@
 cask "spacesbar" do
-  version "0.1.3"
-  sha256 "7e27b10e5271c67a3a24f63447622916b61bb8f3d945eb1a77cd99beb2a5a4a0"
+  version "0.2.0"
+  sha256 "a930e53c6c96b111b165495dac1999d5b391d47b320eca81bed1cc242041459b"
 
   url "https://github.com/alber70g/SpacesBar/releases/download/v#{version}/SpacesBar-#{version}-arm64.zip"
   name "SpacesBar"
